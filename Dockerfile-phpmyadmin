@@ -1,0 +1,6 @@
+FROM phpmyadmin:5.2.0
+
+EXPOSE 80
+WORKDIR /var/www/html
+
+CMD ["sh", "-c" , "php -S 0.0.0.0:80"]
